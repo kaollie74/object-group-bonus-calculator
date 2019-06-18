@@ -40,4 +40,39 @@ const employees = [
 // This is not a race. Everyone on your team should understand what is happening.
 // Ask questions when you don't.
 
+
+  
+
+
+
+
+ function newObject(employee){
+        this.name = employee.name;
+        this.bonusPercentage = employee.employeeNumber;
+        this.totalCompensation = employee.annualSalary;
+        this.totalBonus = employee.reviewRating;
+
+}// end newObject
+
+function calculator(employee){
+let maxBonus = 0;
+  if(employee.reviewRating < 2)
+    maxBonus = 0;
+ else if(employee.reviewRating === 3) 
+      maxBonu = 4;
+ else if(employee.reviewRating === 4){
+      maxBonus = 6;
+ } else if(employee.reviewRating === 5){
+      maxBonus = 10
+ } 
+ if(employeenumber === 4){
+       maxBonus += 5;
+ }
+ if(employee.annualSalary > 65,000){
+   maxBonus = 1
+ }
+ if(maxBonus > 13 || minBonus < 0)
+  return false; 
+}// end   calculator  
+console.log(calculator(employees[0]));
 console.log( employees );
